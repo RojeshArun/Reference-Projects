@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:clickable="true" >
+
+    <include
+        android:id="@+id/topBar"
+        layout="@layout/top_bar_chattingdetails" />
+
+    <LinearLayout
+        android:id="@+id/user_listing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topBar"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutChatBarterTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textfield"
+            android:padding="@dimen/small_padding" >
+
+            <TextView
+                android:id="@+id/txtView_NameChatBarter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:layout_toLeftOf="@+id/txtView_BlockUnblock"
+                android:paddingRight="@dimen/large_padding"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_fifteen" />
+
+            <RatingBar
+                android:id="@+id/fivestar_rating"
+                style="@style/RatingBarNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtView_NameChatBarter"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:layout_marginTop="5dp"
+                android:clickable="false"
+                android:paddingBottom="@dimen/small_padding" />
+
+            <TextView
+                android:id="@+id/txtView_PreferencePerson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fivestar_rating"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:singleLine="true"
+                android:text="USD"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_ten" />
+
+            <RatingBar
+                android:id="@+id/fivestar_rating_given"
+                style="@style/RatingBarNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/txtView_NameChatBarter"
+                android:layout_toRightOf="@+id/txtView_BlockUnblock"
+                android:paddingBottom="@dimen/padding_margin_three"
+                android:paddingTop="@dimen/padding_margin_three" />
+
+            <CheckBox
+                android:id="@+id/checkBoxBlockUnblock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txtView_ChatRateAssign"
+                android:layout_marginRight="@dimen/large_padding"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/selector_chatblock_unblock"
+                android:button="@null"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/txtView_ChatRateAssign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtView_NameChatBarter"
+                android:layout_alignBottom="@+id/txtView_NameChatBarter"
+                android:layout_alignLeft="@+id/txtView_BlockUnblock"
+                android:paddingLeft="@dimen/padding_margin_three"
+                android:paddingRight="@dimen/padding_margin_three"
+                android:text="@string/chat_barter_rate"
+                android:textSize="@dimen/text_size_tweleve" />
+
+            <TextView
+                android:id="@+id/txtView_BlockUnblock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtView_NameChatBarter"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/checkBoxBlockUnblock"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_margin_three"
+                android:paddingRight="@dimen/padding_margin_three"
+                android:text="@string/chat_barter_block"
+                android:textSize="@dimen/text_size_tweleve" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ListView
+                android:id="@+id/chatdetail_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/sendLayout"
+                android:background="@android:color/transparent"
+                android:divider="@android:color/transparent"
+                android:visibility="visible" >
+            </ListView>
+
+            <RelativeLayout
+                android:id="@+id/sendLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/chat_textbox" >
+
+                <TextView
+                    android:id="@+id/txtView_ChatSend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/large_padding"
+                    android:gravity="center"
+                    android:text="@string/chat_barter_SEND"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_fifteen" />
+
+                <EditText
+                    android:id="@+id/edtText_ChatMessages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/padding_margin_twenty"
+                    android:layout_marginRight="@dimen/padding_margin_twenty"
+                    android:layout_toLeftOf="@id/txtView_ChatSend"
+                    android:autoText="false"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="Type your message here"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_tweleve" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/users_maps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topBar"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <fragment
+                android:id="@+id/mapContainers"
+                android:name="com.google.android.gms.maps.MapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </fragment>
+
+            <!-- class="com.google.android.gms.maps.MapFragment" -->
+
+            <TextView
+                android:id="@+id/txtMapHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/black_semi_transparent"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/txtMapHint"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/set_semi_transparent"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</RelativeLayout>

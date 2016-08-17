@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_bg"
+    android:clickable="true" >
+
+    <include
+        android:id="@+id/topBars"
+        layout="@layout/top_bar_floating" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topBars"
+        android:background="@drawable/box_back"
+        android:orientation="vertical"
+        android:padding="@dimen/large_padding" >
+
+        <TextView
+            android:id="@+id/txtView_SetRatingPinSent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/small_padding"
+            android:text="@string/pin_has_been_sent_below" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_padding"
+            android:paddingLeft="@dimen/small_padding" >
+
+            <TextView
+                android:id="@+id/txtView_SetRatingAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/address_set_rating" />
+
+            <TextView
+                android:id="@+id/txtView_SetRatingAddressContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:layout_toRightOf="@+id/txtView_SetRatingAddress"
+                android:textColor="#686868"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_padding"
+            android:paddingLeft="@dimen/small_padding" >
+
+            <TextView
+                android:id="@+id/txtView_SetRatingEmailAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/email_set_rating" />
+
+            <TextView
+                android:id="@+id/txtView_SetRatingEmailContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:layout_toRightOf="@+id/txtView_SetRatingEmailAddress"
+                android:textColor="#686868"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_padding"
+            android:paddingLeft="@dimen/small_padding" >
+
+            <TextView
+                android:id="@+id/txtView_SetRatingMobileNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/mobile_set_rating" />
+
+            <TextView
+                android:id="@+id/txtView_SetRatingMobileContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:layout_toRightOf="@+id/txtView_SetRatingMobileNum"
+                android:textColor="#686868"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtView_IfYouHaveNot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="@dimen/large_padding"
+            android:gravity="center"
+            android:text="@string/_ifyounotrec" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_padding"
+            android:gravity="right"
+                  android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+            android:paddingLeft="@dimen/small_padding" >
+
+            <TextView
+                android:id="@+id/txtView_ResendSetRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="@dimen/small_padding"
+                android:text="@string/update_details"
+                android:textSize="@dimen/text_size_fifteen"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_margin_ten" >
+
+            <EditText
+                android:id="@+id/txtView_SetRatingEnterPIN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:background="@drawable/shape_rectangle_grey"
+                android:gravity="center_vertical"
+                android:hint="@string/_enterpin"
+                android:inputType="number"
+                android:padding="@dimen/large_padding"
+                android:paddingLeft="@dimen/large_padding"
+                android:textColorHint="@color/text_color_fadedgreen"
+                android:textSize="@dimen/text_size_fourteen" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_margin_fifteen" >
+
+            <TextView
+                android:id="@+id/txtView_SetRatingGO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="42dp"
+                android:layout_marginRight="42dp"
+                android:background="@drawable/selector_save_btn"
+                android:gravity="center"
+                android:text="@string/_go_set_rating"
+                android:textColor="@drawable/text_color"
+                android:textSize="@dimen/text_size_eighteen"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

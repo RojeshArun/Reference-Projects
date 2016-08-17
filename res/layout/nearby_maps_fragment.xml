@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/user_listing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/ratingDistanceBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="top"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/ratingDistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_margin="@dimen/large_padding"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/ratingBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_toogle_rating"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/rating"
+                    android:textColor="@drawable/selector_textcolor_rev"
+                    android:visibility="visible" />
+
+                <RadioButton
+                    android:id="@+id/DistanceBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_toogle_distance"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="@string/distance"
+                    android:textColor="@drawable/selector_textcolor_rev"
+                    android:visibility="visible" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/nearby_users_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:descendantFocusability="blocksDescendants"
+            android:focusable="false"
+            android:listSelector="@android:color/transparent"
+            android:focusableInTouchMode="false"
+            android:scrollbars="none" >
+        </ListView>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/loading_transperent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/black_semi_transparent"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/arrowDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/box_bottom_arrow" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtView_NoResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topBars"
+        android:textColor="@color/text_color_white"
+        android:layout_centerInParent="true"
+        android:text="No Results Found"
+        android:gravity="center"
+        android:visibility="gone" />
+    
+        <LinearLayout
+        android:id="@+id/users_maps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+<!--         <fragment -->
+<!--             android:id="@+id/mapContainer" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="match_parent" -->
+<!--             class="com.google.android.gms.maps.MapFragment" > -->
+<!--         </fragment> -->
+    </LinearLayout>
+
+</RelativeLayout>

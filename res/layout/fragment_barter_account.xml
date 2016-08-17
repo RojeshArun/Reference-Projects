@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg" >
+
+    <include
+        android:id="@+id/topBar"
+        layout="@layout/top_bar_floating" />
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/imgView_Barter" -->
+    <!-- android:layout_width="@dimen/profile_pic_barter" -->
+    <!-- android:layout_height="@dimen/profile_pic_barter" -->
+    <!-- android:layout_below="@+id/topBar" -->
+    <!-- android:layout_marginLeft="@dimen/padding_margin_ten" -->
+    <!-- android:layout_marginTop="@dimen/padding_margin_twenty" -->
+    <!-- android:background="@drawable/photoframe" /> -->
+
+    <FrameLayout
+        android:id="@+id/framelyt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topBar"
+        android:layout_marginLeft="@dimen/large_padding"
+        android:layout_marginTop="@dimen/padding_margin_fifteen" >
+
+        <ImageView
+            android:id="@+id/imgView_Barter"
+            android:layout_width="@dimen/profile_pic_barter"
+            android:layout_height="@dimen/profile_pic_barter"
+            android:padding="2dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/no_images_" />
+
+        <ImageView
+            android:layout_width="@dimen/profile_pic_barter"
+            android:layout_height="@dimen/profile_pic_barter"
+            android:background="@drawable/shape_rectangle_images_grey" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/framelyt"
+        android:layout_marginLeft="@dimen/padding_margin_ten"
+        android:layout_marginRight="@dimen/padding_margin_ten"
+        android:layout_marginTop="@dimen/padding_margin_ten"
+        android:layout_toRightOf="@+id/framelyt"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/txtView_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/barter_welcome"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_thirteen" />
+
+        <TextView
+            android:id="@+id/txtView_John"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/txtView_welcome"
+            android:layout_marginLeft="@dimen/padding_margin_three"
+            android:layout_toRightOf="@id/txtView_welcome"
+            android:singleLine="true"
+            android:text="@string/barter_john"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_thirteen"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtView_EnterThe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtView_welcome"
+            android:maxLines="2"
+            android:paddingTop="@dimen/padding_margin_three"
+            android:text="@string/pin_send_to"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_thirteen" />
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/txtView_PIN" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignBottom="@id/txtView_EnterThe" -->
+        <!-- android:layout_toRightOf="@id/txtView_EnterThe" -->
+        <!-- android:paddingLeft="@dimen/padding_margin_three" -->
+        <!-- android:text="@string/barter_PIN" -->
+        <!-- android:textColor="@android:color/white" -->
+        <!-- android:textSize="@dimen/text_size_thirteen" -->
+        <!-- android:textStyle="bold" /> -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/txtView_IfYouHaveNotRec" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_below="@+id/txtView_welcome" -->
+        <!-- android:layout_toRightOf="@+id/txtView_PIN" -->
+        <!-- android:paddingLeft="@dimen/padding_margin_three" -->
+        <!-- android:paddingTop="@dimen/padding_margin_three" -->
+        <!-- android:text="@string/barter_ifyounotrec" -->
+        <!-- android:textColor="@android:color/white" -->
+        <!-- android:textSize="@dimen/text_size_thirteen" /> -->
+
+        <TextView
+            android:id="@+id/txtView_BarterEmailId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/txtView_EnterThe"
+            android:layout_centerVertical="true"
+            android:paddingTop="@dimen/padding_margin_three"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_thirteen"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtView_ResendPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edtText_BarterEnterPin"
+        android:layout_marginBottom="@dimen/small_padding"
+        android:gravity="center"
+        android:paddingBottom="@dimen/small_padding"
+        android:paddingTop="@dimen/small_padding"
+        android:text="@string/barter_RESEND"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtText_BarterEnterPin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/enter_pin"
+        android:gravity="center_vertical"
+        android:hint="@string/barter_ENTERPIN"
+        android:inputType="number"
+        android:paddingLeft="@dimen/padding_margin_fifteen"
+        android:paddingRight="@dimen/large_padding"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textCursorDrawable="@null" />
+
+    <TextView
+        android:id="@+id/txtView_startAgainBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/padding_margin_fifteen"
+        android:layout_marginLeft="@dimen/padding_margin_twenty"
+        android:layout_marginRight="@dimen/padding_margin_twenty"
+        android:background="@drawable/selector_login_txt_button"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingBottom="@dimen/padding_margin_ten"
+        android:paddingTop="@dimen/padding_margin_ten"
+        android:text="@string/barter_start_over_again"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_eighteen" />
+
+    <TextView
+        android:id="@+id/txtView_GoBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/txtView_startAgainBtn"
+        android:layout_marginBottom="@dimen/padding_margin_ten"
+        android:layout_marginLeft="@dimen/padding_margin_twenty"
+        android:layout_marginRight="@dimen/padding_margin_twenty"
+        android:background="@drawable/selector_login_txt_button"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingBottom="@dimen/padding_margin_ten"
+        android:paddingTop="@dimen/padding_margin_ten"
+        android:text="@string/barter_GO"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_eighteen" />
+
+    <include
+        android:id="@+id/loadingllyt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/loading_layout"
+        android:visibility="gone" />
+
+</RelativeLayout>

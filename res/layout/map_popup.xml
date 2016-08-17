@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="@dimen/large_padding" >
+
+    <ImageView
+        android:id="@+id/map_user_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/map_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:layout_toRightOf="@+id/map_user_icon"
+        android:paddingLeft="@dimen/micro_padding"
+        android:text="Jason"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/map_popup_title" />
+
+    <TextView
+        android:id="@+id/map_user_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/map_user_name"
+        android:layout_below="@+id/map_user_name"
+        android:paddingLeft="@dimen/micro_padding"
+        android:text="(F, 32, Delhi)"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/map_popup_details" />
+
+    <RatingBar
+        android:id="@+id/fivestar_rating"
+        style="@style/RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/map_user_name"
+        android:layout_below="@+id/map_user_details"
+        android:paddingLeft="@dimen/micro_padding" />
+
+</RelativeLayout>

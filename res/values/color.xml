@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black_semi_transparent">#B3000000</color>
+    <color name="text_color_fadedgreen">#497C6F</color>
+    <color name="text_color_grey">#686868</color>
+    <color name="text_color_white">#ffffff</color>
+    <color name="transparent_semi">#80000000</color>
+    <color name="set_semi_transparent">#33000000</color>
+    <color name="red">#B40404</color>
+
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg" >
+
+    <LinearLayout
+        android:id="@+id/relative_layout_create_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/padding_margin_twentyfive"
+        android:layout_marginRight="@dimen/padding_margin_twentyfive"
+        android:layout_marginTop="@dimen/padding_margin_fifteen"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/edtText_DisplayName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/display_field"
+            android:gravity="center_vertical"
+            android:hint="@string/display_name"
+            android:paddingLeft="@dimen/padding_margin_ten"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="@dimen/text_size_tweleve" />
+
+        <EditText
+            android:id="@+id/edtText_DisplayEmailId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_padding"
+            android:background="@drawable/email_field"
+            android:gravity="center_vertical"
+            android:hint="@string/email_Id"
+            android:paddingLeft="@dimen/padding_margin_ten"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="@dimen/text_size_tweleve" />
+    </LinearLayout>
+
+</RelativeLayout>

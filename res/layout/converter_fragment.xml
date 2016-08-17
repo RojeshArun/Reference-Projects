@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/small_padding" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/small_padding" >
+
+                <TextView
+                    android:id="@+id/ihave_txtview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/small_padding"
+                    android:text="@string/i_have"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/ihave_txtsize" />
+
+                <TextView
+                    android:id="@+id/iwant_txtview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/small_padding"
+                    android:singleLine="true"
+                    android:text="@string/i_want"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/ihave_txtsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/small_padding" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/txtView_ihavecurrency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_dropdown_short_white"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:padding="@dimen/small_padding"
+                        android:singleLine="true"
+                        android:text="@string/i_have"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/ihave_txtsize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/txtView_iwantcurrency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_dropdown_short_white"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:padding="@dimen/small_padding"
+                        android:text="@string/i_want"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/ihave_txtsize" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/large_padding"
+                android:background="@drawable/black_box"
+                android:orientation="vertical"
+                android:padding="@dimen/small_padding" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/small_padding"
+                    android:text="@string/please_enter_amount_in_either"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/small_padding"
+                        android:layout_marginRight="@dimen/small_padding"
+                        android:layout_marginTop="@dimen/xtralarge_padding"
+                        android:layout_weight="1"
+                        android:gravity="center" >
+
+                        <EditText
+                            android:id="@+id/edttxt_ConvertAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/amount_texfield"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="@dimen/micro_padding"
+                            android:singleLine="true"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/ihave_txtsize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/small_padding"
+                        android:layout_marginRight="@dimen/small_padding"
+                        android:layout_marginTop="@dimen/xtralarge_padding"
+                        android:layout_weight="1"
+                        android:gravity="center" >
+
+                        <EditText
+                            android:id="@+id/edttxt_SelectAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/amount_texfield"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="@dimen/micro_padding"
+                            android:singleLine="true"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/ihave_txtsize" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtView_ConvertBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_margin_twentyfive"
+                    android:layout_marginRight="@dimen/padding_margin_twentyfive"
+                    android:layout_marginTop="@dimen/padding_margin_twenty"
+                    android:background="@drawable/selector_login_txt_button"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/medium_padding"
+                    android:paddingTop="@dimen/medium_padding"
+                    android:text="@string/convert"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_eighteen" />
+
+                <TextView
+                    android:id="@+id/txtView_Final_Convert_Amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/large_padding"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/final_Amount"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_eighteen"
+                    android:textStyle="normal"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/search_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/xtralarge_padding"
+                android:layout_marginLeft="@dimen/padding_margin_twentyfive"
+                android:layout_marginRight="@dimen/padding_margin_twentyfive"
+                android:layout_marginTop="@dimen/xtralarge_padding"
+                android:background="@drawable/selector_login_txt_button"
+                android:clickable="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/small_padding"
+                    android:text="@string/search"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_eighteen" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/small_padding"
+                    android:text="@string/_by_currency_pair_"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_fourteen" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

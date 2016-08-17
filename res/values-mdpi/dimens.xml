@@ -1,0 +1,73 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- General Paddings -->
+
+    <dimen name="micro_padding">1dp</dimen>
+    <dimen name="small_padding">3dp</dimen>
+    <dimen name="medium_padding">4dp</dimen>
+    <dimen name="large_padding">7dp</dimen>
+    <dimen name="xtralarge_padding">12dp</dimen>
+    <dimen name="xxtralarge_padding">20dp</dimen>
+    
+    
+    <!-- Converter Dims -->
+    <dimen name="ihave_txtsize">14sp</dimen>
+
+    <!-- Header Text Dimens -->
+    <dimen name="header_text_size">18sp</dimen>
+    <dimen name="small_padding_line_seperator">2dp</dimen>
+    <!-- Near By Screen Dimes -->
+    <dimen name="nearby_cell_size">15sp</dimen>
+    <dimen name="nearby_cell_details">11sp</dimen>
+    <dimen name="nearby_cell_dist">10sp</dimen>
+
+    <!-- Map Pop Up text -->
+    <dimen name="map_popup_title">12sp</dimen>
+    <dimen name="map_popup_details">8sp</dimen>
+
+    <!-- Tools Dimensions -->
+    <dimen name="tools_text">13sp</dimen>
+    <dimen name="tools_roundoff">15sp</dimen>
+
+    <!-- Copied Directely -->
+
+
+    <!-- Header Text Dimens -->
+
+    <dimen name="text_size_ten">8sp</dimen>
+    <dimen name="text_size_eleven">9sp</dimen>
+    <dimen name="text_size_tweleve">10sp</dimen>
+    <dimen name="text_size_thirteen">11sp</dimen>
+    <dimen name="text_size_fourteen">12sp</dimen>
+    <dimen name="text_size_fifteen">13sp</dimen>
+    <dimen name="text_size_eighteen">15sp</dimen>
+    <dimen name="text_size_twenty">17sp</dimen>
+    <dimen name="text_size_twentyfive">21sp</dimen>
+    <dimen name="text_size_thirtyfive">30sp</dimen>
+
+    <!-- Padding Number to text -->
+    <dimen name="padding_margin_two">1dp</dimen>
+    <dimen name="padding_margin_three">2dp</dimen>
+    <dimen name="padding_margin_five">3dp</dimen>
+    <dimen name="padding_margin_ten">8dp</dimen>
+    <dimen name="padding_margin_fifteen">12dp</dimen>
+    <dimen name="padding_margin_twenty">17dp</dimen>
+    <dimen name="padding_margin_twentyfive">21dp</dimen>
+    <dimen name="padding_margin_thirty">26dp</dimen>
+    <dimen name="padding_margin_thirtyfive">30dp</dimen>
+    <dimen name="padding_margin_fourty">35dp</dimen>
+    <dimen name="padding_margin_fourtyfive">40dp</dimen>
+    <dimen name="padding_margin_fifty">45dp</dimen>
+    <dimen name="padding_margin_fiftyfive">50dp</dimen>
+
+    <!-- Profile Screen Dimensions -->
+    <dimen name="profile_field_dim">10sp</dimen>
+    
+    <!-- Create Accout Dims -->
+    <dimen name="next_dim">14sp</dimen>
+
+</resources>

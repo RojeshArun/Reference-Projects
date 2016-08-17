@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/slidedown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/large_padding"
+        android:padding="@dimen/large_padding"
+        android:src="@drawable/logo_top" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/small_padding"
+        android:singleLine="true"
+        android:text="Title"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/header_text_size" />
+
+    <ImageView
+        android:id="@+id/rightButOneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/rightMostButton"
+        android:paddingBottom="@dimen/large_padding"
+        android:paddingLeft="@dimen/large_padding"
+        android:paddingRight="@dimen/micro_padding"
+        android:paddingTop="@dimen/large_padding"
+        android:src="@drawable/map_topbar"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/rightMostButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:layout_marginRight="@dimen/small_padding"
+        android:padding="@dimen/large_padding"
+        android:src="@drawable/icn_user"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rightMostButton"
+        android:layout_marginLeft="@dimen/padding_margin_three"
+        android:layout_marginRight="@dimen/padding_margin_three"
+        android:background="@color/text_color_grey"
+        android:gravity="bottom" />
+
+</RelativeLayout>

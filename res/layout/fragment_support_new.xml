@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_bg"
+    android:clickable="true" >
+
+    <include
+        android:id="@+id/topBars"
+        layout="@layout/top_bar_floating" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topBars"
+        android:background="@drawable/top_slide"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtView_Support"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_margin_ten"
+            android:layout_marginTop="@dimen/padding_margin_fifteen"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/small_padding"
+            android:paddingRight="@dimen/small_padding"
+            android:text="@string/need_help"
+            android:textColor="@color/text_color_fadedgreen" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtView_Support"
+            android:layout_marginLeft="@dimen/padding_margin_ten"
+            android:layout_marginTop="@dimen/padding_margin_twenty"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtView_webSite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_margin_fifteen"
+                android:paddingLeft="@dimen/small_padding"
+                android:paddingRight="@dimen/small_padding"
+                android:text="@string/wesite"
+                android:textColor="@color/text_color_fadedgreen" />
+
+            <TextView
+                android:id="@+id/txtView_PhoneNumSupport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_margin_fifteen"
+                android:paddingLeft="@dimen/small_padding"
+                android:paddingRight="@dimen/small_padding"
+                android:text="@string/phone_num_support"
+                android:textColor="@color/text_color_fadedgreen" />
+
+            <TextView
+                android:id="@+id/txtView_EmailUsSupport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/small_padding"
+                android:paddingRight="@dimen/small_padding"
+                android:text="@string/email_us_support"
+                android:textColor="@color/text_color_fadedgreen" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

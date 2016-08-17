@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/cell_seprator"
+    android:padding="@dimen/large_padding" >
+
+    <ImageView
+        android:id="@+id/online_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/user_image"
+        android:layout_alignTop="@+id/user_image"
+        android:layout_centerVertical="true"
+        android:src="@drawable/selector_online_status" />
+
+    <ImageView
+        android:id="@+id/user_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:layout_marginRight="@dimen/small_padding"
+        android:layout_toRightOf="@+id/online_status"
+        android:layout_centerVertical="true"
+        android:src="@drawable/com_images_" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/small_padding"
+        android:layout_toRightOf="@+id/user_image"
+        android:text="Emma"
+        android:textColor="@color/text_color_fadedgreen"
+        android:textSize="@dimen/nearby_cell_size"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/fivestar_rating"
+        style="@style/RatingBarNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_name"
+        android:layout_below="@+id/user_name" />
+
+    <TextView
+        android:id="@+id/block_user_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fivestar_rating"
+        android:layout_marginRight="@dimen/small_padding"
+        android:layout_toRightOf="@+id/user_image"
+        android:text="08 mi"
+        android:textColor="@color/text_color_fadedgreen"
+        android:textSize="@dimen/nearby_cell_details"
+        android:textStyle="normal" />
+
+<!--     <TextView -->
+<!--         android:id="@+id/user_distance" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_centerVertical="true" -->
+<!--         android:layout_marginRight="@dimen/small_padding" -->
+<!--         android:layout_toLeftOf="@+id/arrow" -->
+        
+<!--         android:textColor="@android:color/white" -->
+<!--         android:textSize="@dimen/nearby_cell_dist" -->
+<!--         android:textStyle="normal" -->
+<!--         android:visibility="visible" /> -->
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/arrow" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentRight="true" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:src="@drawable/arrow" /> -->
+
+    <CheckBox
+        android:id="@+id/check_round_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:background="@drawable/selector_switch_block_on_off"
+        android:button="@null" />
+
+</RelativeLayout>

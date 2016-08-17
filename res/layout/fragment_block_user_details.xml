@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white" >
+
+    <ImageView
+        android:id="@+id/imgView_userImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/large_padding"
+        android:layout_marginLeft="@dimen/large_padding"
+        android:layout_marginTop="@dimen/padding_margin_fifteen"
+        android:background="@drawable/com_images_" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutChatBarterTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/padding_margin_fifteen"
+        android:layout_toRightOf="@id/imgView_userImage"
+        android:paddingLeft="@dimen/small_padding" >
+
+        <TextView
+            android:id="@+id/txtView_NameChatBarter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/small_padding"
+            android:layout_marginTop="@dimen/padding_margin_five"
+            android:text="@string/chat_barter_name" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutStarRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtView_NameChatBarter"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/imgBtn_StarRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:background="@drawable/star_act" />
+
+            <ImageButton
+                android:id="@+id/imgBtn_StarRate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_margin_three"
+                android:background="@drawable/star_act" />
+
+            <ImageButton
+                android:id="@+id/imgBtn_StarRate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_margin_three"
+                android:background="@drawable/star_act" />
+
+            <ImageButton
+                android:id="@+id/imgBtn_StarRate3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_margin_three"
+                android:background="@drawable/star_act" />
+
+            <ImageButton
+                android:id="@+id/imgBtn_StarRate4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_margin_three"
+                android:background="@drawable/star_act" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txtView_AmountLimit"
+            android:layout_below="@id/LinearLayoutStarRating"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/_10ml"
+			android:layout_marginLeft="@dimen/small_padding"
+			android:textSize="@dimen/text_size_tweleve"/>
+                
+    </RelativeLayout>
+    
+    <CheckBox 
+        android:id="@+id/checkBox_Block_Unblock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:button="@null"
+        android:background="@drawable/switch_red"
+        android:layout_marginTop="@dimen/padding_margin_fifteen"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/large_padding"/>
+</RelativeLayout>

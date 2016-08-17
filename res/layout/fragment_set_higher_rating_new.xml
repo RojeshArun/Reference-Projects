@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_bg"
+    android:clickable="true" >
+
+    <include
+        android:id="@+id/topBars"
+        layout="@layout/top_bar_floating" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topBars"
+        android:background="@android:color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/large_padding"
+            android:layout_marginTop="@dimen/large_padding"
+            android:background="@drawable/box_back"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            android:paddingLeft="@dimen/large_padding"
+            android:paddingRight="@dimen/large_padding" >
+
+            <EditText
+                android:id="@+id/edtText_Set_Name_Rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_padding"
+                android:background="@drawable/selector_my_profile_transition"
+                android:gravity="center_vertical"
+                android:hint="@string/first_Name"
+                android:paddingBottom="@dimen/large_padding"
+                android:paddingLeft="@dimen/large_padding"
+                android:paddingRight="@dimen/small_padding"
+                android:paddingTop="@dimen/large_padding"
+                android:singleLine="true"
+                android:textColor="@color/text_color_fadedgreen"
+                android:textColorHint="@color/text_color_fadedgreen"
+                android:textSize="@dimen/text_size_tweleve" />
+
+            <EditText
+                android:id="@+id/edtText_Set_LastName_Rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_padding"
+                android:background="@drawable/selector_my_profile_transition"
+                android:gravity="center_vertical"
+                android:hint="@string/last_Name"
+                android:paddingBottom="@dimen/large_padding"
+                android:paddingLeft="@dimen/large_padding"
+                android:paddingRight="@dimen/small_padding"
+                android:paddingTop="@dimen/large_padding"
+                android:singleLine="true"
+                android:textColor="@color/text_color_fadedgreen"
+                android:textColorHint="@color/text_color_fadedgreen"
+                android:textSize="@dimen/text_size_tweleve" />
+
+            <TextView
+                android:id="@+id/edtText_SetEmail_IdRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_padding"
+                android:background="@drawable/selector_my_profile_transition"
+                android:gravity="center_vertical"
+                android:hint="@string/email_Id"
+                android:paddingBottom="@dimen/large_padding"
+                android:paddingLeft="@dimen/large_padding"
+                android:paddingRight="@dimen/small_padding"
+                android:paddingTop="@dimen/large_padding"
+                android:singleLine="true"
+                android:textColor="@color/text_color_fadedgreen"
+                android:textColorHint="@color/text_color_fadedgreen"
+                android:textSize="@dimen/text_size_tweleve" />
+
+            <EditText
+                android:id="@+id/edtText_Set_Street_Rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_padding"
+                android:background="@drawable/selector_my_profile_transition"
+                android:gravity="center_vertical"
+                android:hint="@string/address"
+                android:paddingBottom="@dimen/large_padding"
+                android:paddingLeft="@dimen/large_padding"
+                android:paddingRight="@dimen/small_padding"
+                android:paddingTop="@dimen/large_padding"
+                android:singleLine="true"
+                android:textColor="@color/text_color_fadedgreen"
+                android:textColorHint="@color/text_color_fadedgreen"
+                android:textSize="@dimen/text_size_tweleve" />
+
+            <EditText
+                android:id="@+id/edtText_Set_City_Rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_padding"
+                android:background="@drawable/selector_my_profile_transition"
+                android:gravity="center_vertical"
+                android:hint="@string/city"
+                android:paddingBottom="@dimen/large_padding"
+                android:paddingLeft="@dimen/large_padding"
+                android:paddingRight="@dimen/small_padding"
+                android:paddingTop="@dimen/large_padding"
+                android:singleLine="true"
+                android:textColor="@color/text_color_fadedgreen"
+                android:textColorHint="@color/text_color_fadedgreen"
+                android:textSize="@dimen/text_size_tweleve" />
+
+            <EditText
+                android:id="@+id/edtText_Set_PinCode_Rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_padding"
+                android:background="@drawable/selector_my_profile_transition"
+                android:gravity="center_vertical"
+                android:hint="@string/pin_Code"
+                android:paddingBottom="@dimen/large_padding"
+                android:paddingLeft="@dimen/large_padding"
+                android:paddingRight="@dimen/small_padding"
+                android:paddingTop="@dimen/large_padding"
+                android:singleLine="true"
+                android:textColor="@color/text_color_fadedgreen"
+                android:textColorHint="@color/text_color_fadedgreen"
+                android:textSize="@dimen/text_size_tweleve" />
+
+            <!--
+                <EditText
+                android:id="@+id/edtText_Set_Country_Rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_padding"
+                android:background="@drawable/selector_my_profile_transition"
+                android:gravity="center_vertical"
+                android:hint="@string/country"
+                android:paddingBottom="@dimen/large_padding"
+                android:paddingLeft="@dimen/large_padding"
+                android:paddingRight="@dimen/small_padding"
+                android:paddingTop="@dimen/large_padding"
+                android:singleLine="true"
+                android:textColor="@color/text_color_fadedgreen"
+                android:textColorHint="@color/text_color_fadedgreen"
+                android:textSize="@dimen/text_size_tweleve" />
+            -->
+
+            <TextView
+                android:id="@+id/txtView_Country_myProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_padding"
+                android:background="@drawable/dropdown_1"
+                android:enabled="true"
+                android:gravity="center_vertical"
+                android:hint="@string/country"
+                android:paddingBottom="@dimen/large_padding"
+                android:paddingLeft="@dimen/large_padding"
+                android:paddingRight="@dimen/large_padding"
+                android:paddingTop="@dimen/large_padding"
+                android:singleLine="true"
+                android:textColor="@color/text_color_fadedgreen"
+                android:textColorHint="@color/text_color_fadedgreen"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size_tweleve" />
+
+            <TextView
+                android:id="@+id/txtView_State_myProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_padding"
+                android:background="@drawable/dropdown_1"
+                android:enabled="true"
+                android:gravity="center_vertical"
+                android:hint="@string/state"
+                android:paddingBottom="@dimen/large_padding"
+                android:paddingLeft="@dimen/large_padding"
+                android:paddingRight="@dimen/large_padding"
+                android:paddingTop="@dimen/large_padding"
+                android:singleLine="true"
+                android:textColor="@color/text_color_fadedgreen"
+                android:textColorHint="@color/text_color_fadedgreen"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size_tweleve" />
+
+            <!--
+                 <EditText
+                android:id="@+id/edtText_Set_State_Rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_padding"
+               android:background="@drawable/textfield_2"
+                android:gravity="center_vertical"
+                android:hint="@string/state"
+                android:paddingBottom="@dimen/large_padding"
+                android:paddingLeft="@dimen/large_padding"
+                android:paddingRight="@dimen/small_padding"
+                android:paddingTop="@dimen/large_padding"
+                android:singleLine="true"
+                android:textColor="@color/text_color_fadedgreen"
+                android:textColorHint="@color/text_color_fadedgreen"
+                android:textSize="@dimen/text_size_tweleve" />
+            -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_padding"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/edtText_Set_ISDCode_Rating"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:background="@drawable/selector_my_profile_transition"
+                    android:hint="@string/ISD_Num"
+                    android:inputType="number"
+                    android:paddingBottom="@dimen/large_padding"
+                    android:paddingLeft="@dimen/large_padding"
+                    android:paddingRight="@dimen/small_padding"
+                    android:paddingTop="@dimen/large_padding"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_fadedgreen"
+                    android:textColorHint="@color/text_color_fadedgreen"
+                    android:textSize="@dimen/text_size_tweleve" />
+
+                <EditText
+                    android:id="@+id/edtText_Set_PhoneNum_Rating"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/large_padding"
+                    android:layout_marginLeft="@dimen/small_padding"
+                    android:layout_weight=".8"
+                    android:background="@drawable/selector_my_profile_transition"
+                    android:hint="@string/phone_Num"
+                    android:inputType="number"
+                    android:paddingBottom="@dimen/large_padding"
+                    android:paddingLeft="@dimen/large_padding"
+                    android:paddingRight="@dimen/small_padding"
+                    android:paddingTop="@dimen/large_padding"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_fadedgreen"
+                    android:textColorHint="@color/text_color_fadedgreen"
+                    android:textSize="@dimen/text_size_tweleve" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtView_Set_Content_Rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/padding_margin_ten"
+                android:layout_marginRight="@dimen/padding_margin_ten"
+                android:gravity="center"
+                android:text="@string/please_confirm_your_contact"
+                android:textColor="@color/text_color_fadedgreen"
+                android:textSize="@dimen/text_size_ten" />
+
+            <TextView
+                android:id="@+id/txtView_BtnSet_SendmePin_Rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="@dimen/large_padding"
+                android:background="@drawable/selector_save_btn"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/send_me_pin"
+                android:textColor="@drawable/text_color"
+                android:textSize="@dimen/text_size_fifteen" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

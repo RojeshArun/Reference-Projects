@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:clickable="true" >
+
+    <include
+        android:id="@+id/topBars"
+        layout="@layout/top_bar_floating" />
+
+    <FrameLayout
+        android:id="@+id/users_maps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topBars"
+        android:visibility="visible" >
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black_semi_transparent"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="@string/txtMapHint"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+<!--         <Button -->
+<!--             android:id="@+id/btnSetLocation" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:clickable="true" -->
+<!--             android:layout_gravity="right|bottom" -->
+<!--             android:layout_marginBottom="10dp" -->
+<!--             android:paddingLeft="25dp" -->
+<!--             android:layout_marginRight="20dp" -->
+<!--             android:text="Set GPS Location" -->
+<!--             android:textSize="13sp" -->
+<!--             android:textStyle="bold" -->
+<!--             android:textColor="@android:color/white" -->
+<!--             android:background="@drawable/gps_location_" -->
+<!--             android:visibility="gone" /> -->
+        
+        <TextView 
+            android:id="@+id/btnSetLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:text="Set GPS Location"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/popup_text"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/gps_location_"
+            android:visibility="visible"
+            
+            />
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+
+    <dimen name="preference_height">900dp</dimen>
+
+</resources>

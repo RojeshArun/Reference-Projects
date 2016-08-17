@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_bg" >
+
+    <TextView
+        android:id="@+id/txtView_ConvertAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_margin_twenty"
+        android:layout_marginRight="@dimen/padding_margin_twenty"
+        android:layout_marginTop="@dimen/padding_margin_fifteen"
+        android:background="@drawable/selector_dropdown_white"
+        android:padding="@dimen/large_padding"
+        android:text="@string/convert_from"
+        android:singleLine="true"
+        android:ems="10"
+        android:textColor="@drawable/text_color"
+        android:textSize="@dimen/tools_text" />
+
+    <TextView
+        android:id="@+id/txtView_SelectAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtView_ConvertAmount"
+        android:layout_marginLeft="@dimen/padding_margin_twenty"
+        android:layout_marginRight="@dimen/padding_margin_twenty"
+        android:layout_marginTop="@dimen/large_padding"
+        android:background="@drawable/selector_dropdown_white"
+        android:padding="@dimen/large_padding"
+        android:text="@string/select_to"
+        android:singleLine="true"
+        android:ems="10"
+        android:textColor="@drawable/text_color"
+        android:textSize="@dimen/tools_text" />
+
+    <EditText
+        android:id="@+id/txtView_EnterAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtView_SelectAmount"
+        android:layout_marginLeft="@dimen/padding_margin_twenty"
+        android:layout_marginRight="@dimen/padding_margin_twenty"
+        android:layout_marginTop="@dimen/large_padding"
+        android:background="@drawable/textfield_2"
+        android:cursorVisible="true"
+        android:hint="@string/enter_amount"
+        android:inputType="numberDecimal"
+        android:padding="@dimen/large_padding"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textCursorDrawable="@drawable/cursor_white"
+        android:textSize="@dimen/tools_text" />
+
+    <RelativeLayout
+        android:id="@+id/rel_Layout_roundOff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtView_EnterAmount"
+        android:layout_marginLeft="@dimen/padding_margin_twenty"
+        android:layout_marginRight="@dimen/padding_margin_twenty"
+        android:layout_marginTop="@dimen/padding_margin_fifteen" >
+
+        <CheckBox
+            android:id="@+id/check_round_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_switch_on_off"
+            android:button="@null" />
+
+        <TextView
+            android:id="@+id/txtView_RoundOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/round_off"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/tools_roundoff"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/txtView_ConvertBtn" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_below="@id/rel_Layout_roundOff" -->
+    <!-- android:layout_centerInParent="true" -->
+    <!-- android:layout_marginLeft="@dimen/padding_margin_fourtyfive" -->
+    <!-- android:layout_marginRight="@dimen/padding_margin_fourtyfive" -->
+    <!-- android:layout_marginTop="@dimen/padding_margin_twenty" -->
+    <!-- android:background="@drawable/textfield_2" -->
+    <!-- android:gravity="center" -->
+    <!-- android:paddingBottom="@dimen/padding_margin_ten" -->
+    <!-- android:paddingLeft="@dimen/small_padding" -->
+    <!-- android:paddingTop="@dimen/large_padding" -->
+    <!--  -->
+    <!-- android:textColor="@android:color/white" -->
+    <!-- android:textSize="@dimen/header_text_size" /> -->
+
+    <TextView
+        android:id="@+id/txtView_ConvertBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel_Layout_roundOff"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/padding_margin_twentyfive"
+        android:layout_marginRight="@dimen/padding_margin_twentyfive"
+        android:layout_marginTop="@dimen/padding_margin_twenty"
+        android:background="@drawable/selector_login_txt_button"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingBottom="@dimen/large_padding"
+        android:paddingTop="@dimen/large_padding"
+        android:text="@string/convert"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_eighteen" />
+
+    <RelativeLayout
+        android:id="@+id/conveted_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtView_ConvertBtn"
+        android:layout_marginTop="@dimen/padding_margin_twenty"
+        android:gravity="center"
+        android:padding="@dimen/large_padding"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/txtView_Final_Convert_Amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="@string/final_Amount"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_twentyfive"
+            android:textStyle="bold" />
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/txtView_Conversion_Unit" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="@dimen/small_padding" -->
+        <!-- android:layout_toRightOf="@id/txtView_Final_Convert_Amount" -->
+        <!-- android:text="@string/unit_conversion" -->
+        <!-- android:textColor="@android:color/white" -->
+        <!-- android:textSize="@dimen/text_size_twentyfive" /> -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/loading_transperent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/black_semi_transparent"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/arrowDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/box_bottom_arrow" />
+    </LinearLayout>
+
+</RelativeLayout>

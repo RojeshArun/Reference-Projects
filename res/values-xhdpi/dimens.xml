@@ -1,0 +1,73 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- General Paddings -->
+
+    <dimen name="micro_padding">2dp</dimen>
+    <dimen name="small_padding">5dp</dimen>
+    <dimen name="medium_padding">8dp</dimen>
+    <dimen name="large_padding">11dp</dimen>
+    <dimen name="xtralarge_padding">16dp</dimen>
+    <dimen name="xxtralarge_padding">26dp</dimen>
+
+    <!-- Tools Dimensions -->
+    <dimen name="tools_text">14sp</dimen>
+    <dimen name="tools_roundoff">16sp</dimen>
+    <dimen name="small_padding_line_seperator">3dp</dimen>
+    <!-- Header Text Dimens -->
+    <dimen name="header_text_size">21sp</dimen>
+    <dimen name="text_size_ten">10sp</dimen>
+    <dimen name="text_size_eleven">13sp</dimen>
+    <dimen name="text_size_tweleve">14sp</dimen>
+    <dimen name="text_size_thirteen">15sp</dimen>
+    <dimen name="text_size_fourteen">16sp</dimen>
+    <dimen name="text_size_fifteen">17sp</dimen>
+    <dimen name="text_size_eighteen">20sp</dimen>
+    <dimen name="text_size_twenty">22sp</dimen>
+    <dimen name="text_size_twentyfive">27sp</dimen>
+    <dimen name="text_size_thirtyfive">37sp</dimen>
+
+    <!-- Padding Number to text -->
+    <dimen name="padding_margin_two">2dp</dimen>
+    <dimen name="padding_margin_three">3dp</dimen>
+    <dimen name="padding_margin_five">5dp</dimen>
+    <dimen name="padding_margin_ten">11dp</dimen>
+    <dimen name="padding_margin_fifteen">15dp</dimen>
+    <dimen name="padding_margin_twenty">20dp</dimen>
+    <dimen name="padding_margin_twentyfive">25dp</dimen>
+    <dimen name="padding_margin_thirty">30dp</dimen>
+    <dimen name="padding_margin_thirtyfive">35dp</dimen>
+    <dimen name="padding_margin_fourty">40dp</dimen>
+    <dimen name="padding_margin_fourtyfive">45dp</dimen>
+    <dimen name="padding_margin_fifty">50dp</dimen>
+    <dimen name="padding_margin_fiftyfive">55dp</dimen>
+    
+    <!-- Converter Dims -->
+    <dimen name="ihave_txtsize">16sp</dimen>
+
+    <!-- Near By Screen Dimes -->
+    <dimen name="nearby_cell_size">17sp</dimen>
+    <dimen name="nearby_cell_details">12sp</dimen>
+    <dimen name="nearby_cell_dist">11sp</dimen>
+
+    <!-- Map Pop Up text -->
+    <dimen name="map_popup_title">12sp</dimen>
+    <dimen name="map_popup_details">10sp</dimen>
+
+    <!-- Profile Screen Dimensions -->
+    <dimen name="profile_field_dim">12sp</dimen>
+    <!-- Preferences -->
+    <dimen name="popup_text">13sp</dimen>
+
+    <!-- Profile Pic Dimens -->
+    <dimen name="profile_pic_dim">92dp</dimen>
+    <dimen name="chat_pic_dim">55dp</dimen>
+    <dimen name="profile_pic_barter">110dp</dimen>
+    
+    <!-- Create Accout Dims -->
+    <dimen name="next_dim">16sp</dimen>
+
+</resources>

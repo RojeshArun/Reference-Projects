@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bartr</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="set_higher_rating">Set Higher Rating</string>
+    <string name="near_by">Near By</string>
+
+    <!-- Profile Strings that to be use -->
+    <string name="full_Name">Full Name</string>
+    <string name="first_Name">First Name</string>
+    <string name="last_Name">Last Name</string>
+    <string name="email_Id">abc@gmail.com</string>
+    <string name="street_Name">Street Name</string>
+    <string name="city_Name">City Name</string>
+    <string name="city">City</string>
+    <string name="pin_Code">Zip Code</string>
+    <string name="state_Name">State Name</string>
+    <string name="country_Name">Country Name</string>
+    <string name="country">Country</string>
+    <string name="ISD_Num">+CC</string>
+    <string name="phone_Num">Mobile No</string>
+    <!-- For Login Screen -->
+    <string name="login">Login</string>
+    <string name="existingUserLogin">Existing User Login</string>
+    <string name="forgetPassword">Forgot Password</string>
+    <string name="newuserclickhere"><u>New user click here</u></string>
+    <string name="email_Id_login">Email Id</string>
+    <string name="password_login">Password</string>
+    <string name="atTheRate">0</string>
+
+    <!-- For Tool Screen -->
+    <string name="tool">Tool</string>
+    <string name="convert_from">Convert from</string>
+    <string name="select_to">Select to</string>
+    <string name="enter_amount">Enter the Amount</string>
+    <string name="round_off">Round Off</string>
+    <string name="convert">Convert</string>
+    <string name="final_Amount">$ 250</string>
+    <string name="unit_conversion">USD</string>
+    <!-- Create An account -->
+    <string name="display_name">Display Name</string>
+    <string name="abc">ABC</string>
+    <string name="city_Name_create">City</string>
+    <string name="re_password">Re-Password</string>
+    <string name="address">Address</string>
+    <string name="zipcode">Zip code</string>
+    <string name="ISD_Code_Create_Account">+CC</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="first_Name_create">First Name</string>
+    <string name="last_Name_create">Last Name</string>
+    <string name="state_Name_state">State</string>
+    <string name="country_Name_create">Country</string>
+    <string name="dateofbirth">Date Of Birth (Optional)</string>
+    <string name="provide_details_create">Please provide complete details, to get higher rating</string>
+    <string name="skip">Skip</string>
+    <string name="please_enter_pin">Please enter your pin</string>
+    <!-- Barter after login/account creation -->
+    <string name="barter_welcome">Welcome</string>
+    <string name="barter_john">Jhon</string>
+    <string name="barter_enterthe">Please enter</string>
+    <string name="barter_PIN">PIN</string>
+    <string name="barter_ifyounotrec">below sent to</string>
+    <string name="barter_emailId">John_D@gmai.com</string>
+    <string name="barter_ENTERPIN">Enter PIN</string>
+    <string name="barter_GO">GO</string>
+    <string name="barter_start_over_again">Start Over Again</string>
+    <string name="barter_RESEND">RESEND PIN</string>
+
+    <!-- Chat Barter Screen -->
+    <string name="chat_barter_name">Paul Thomas</string>
+    <string name="chat_barter_address">F,32,Delhi</string>
+    <string name="chat_barter_rate">Rate</string>
+    <string name="chat_barter_block">Block</string>
+    <string name="chat_barter_SEND">Send</string>
+
+    <!-- Set Higher Rating -->
+    <string name="please_confirm_your_contact">Please confirm/update your contact details, we will share <b>PIN code</b> to active your account for higher rating.</string>
+
+    <!-- Sender chat Screen -->
+    <string name="sender_chat_date">21/4/14</string>
+    <string name="please_select_currency_from">Please select currency to which you want to convert from</string>
+    <string name="please_select_currency">Please select currency to which you want to convert</string>
+    <string name="i_have">I Have</string>
+    <string name="send_me_pin">Send me Pin</string>
+    <string name="please_enter_amount">Please enter amount</string>
+    <!-- Share Screen -->
+    <string name="share">Share \'<b>Bartr</b>\' with your friends</string>
+    <string name="share_1">Share </string>
+
+    <!-- Support screen -->
+    <string name="_10ml">10ml</string>
+    <string name="need_help">Need help? You can contact us via any means.Our experts are available for all support.</string>
+    <string name="wesite">Wesite: <b>www.google.com</b></string>
+    <string name="phone_num_support">Phone No: <b>+1 99 99 99999</b></string>
+    <string name="email_us_support">Email Us: <b>abcd@abc.com</b></string>
+
+    <!-- passWord Screen -->
+
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="re_enter_password">Re-Enter Pasword</string>
+    <string name="save">Save</string>
+    <string name="please_enter_oldpassword">Please enter old password</string>
+    <string name="please_enter_Newpassword">Please enter new password</string>
+    <string name="please_enter_ReEnterpassword">Please re-enter the password</string>
+    <string name="pin_has_been_sent_below">Pin has been sent  on below details:</string>
+    <string name="address_set_rating">Address :</string>
+    <string name="_name">NAME</string>
+    <string name="email_set_rating">Email :</string>
+    <string name="rahul_123">rahul@123</string>
+    <string name="mobile_set_rating">Mobile no :</string>
+    <string name="_mobilenum">434343443</string>
+    <string name="_ifyounotrec">If you have not received pin on above address</string>
+    <string name="_resend">Resend PIN</string>
+    <string name="update_details">Update Details</string>
+    <string name="_enterpin">Enter PIN</string>
+    <string name="_go_set_rating">Go</string>
+    <string name="profile">Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="rating">Rating</string>
+    <string name="set_rating">Set Higher Rating</string>
+    <string name="blocked_users">Blocked Users</string>
+    <string name="visible_user">Visible User List 	</string>
+    <string name="about_application">About Application</string>
+    <string name="support">Support &amp; Legal</string>
+    <string name="barter">Bartr</string>
+    <string name="create_an_account">Create an Account</string>
+    <string name="please_enter_display_name">Please enter display name</string>
+    <string name="please_enter_email_id">Please enter email id</string>
+    <string name="please_enter_valid_email_id">Please enter valid email id</string>
+    <string name="please_enter_password">Please enter password</string>
+    <string name="password_should_contain_at_least_6_characters_">Password should contain at least 6 characters.</string>
+    <string name="please_enter_re_password">Please enter re-password</string>
+    <string name="password_do_not_match">Passwords do not match</string>
+    <string name="thank_you_for_registration_your_pin_has_been_sent_">Thank you for Registration Your PIN has been sent to your Email ID.</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="submit">submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="chat">Chat History</string>
+    <string name="distance">Distance</string>
+    <string name="visible_user_list">Visible User List</string>
+    <string name="aboutapp">AboutApp</string>
+    <string name="i_am_looking_for">I am looking for</string>
+    <string name="map_range">Map Range</string>
+    <string name="set_online_status">Set Online Status</string>
+    <string name="set_visibility">Set Visibility</string>
+    <string name="receive_notification">Receive Notification</string>
+    <string name="camera">Camera</string>
+    <string name="no_state_found">No State Found</string>
+    <string name="gallery">Gallery</string>
+    <string name="please_enter_valid_email_address">Please enter valid email address</string>
+    <string name="please_enter_email_address">Please enter email address</string>
+    <string name="map">Map</string>
+    <string name="tools">Convertor</string>
+    <string name="no_internet_connection_please_try_again">No Internet Connection.Please Try Again</string>
+    <string name="loading_">Loading...</string>
+    <string name="logout">Logout</string>
+    <string name="done">Done</string>
+    <string name="please_select_preferences">Please set your preferences to view near by users.</string>
+    <string name="select_your_profile_image">Select your profile image</string>
+    <string name="state">State</string>
+    <string name="ok">OK</string>
+    <string name="thanks_registering">"Thank you for Registeration Your PIN has been sent to your Email ID"</string>
+    <string name="please_enter_valid_email">Please enter valid email</string>
+    <string name="please_select_country_first">Please select country first</string>
+
+    <!-- FB & Twitter strings -->
+    <string name="plsWait">Please wait</string>
+    <string name="fetchInfo">Fecthing Information...</string>
+    <string name="fbloginError">Unable to login with Facebook. Please try again.</string>
+    <string name="twitterloginError">Unable to login with Twitter. Please try again.</string>
+    <string name="type_your_message_here">Type your message here</string>
+
+    <!-- GCM Strings -->
+
+
+    <!-- <string name="app_name">GCM Demo</string> -->
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">From GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_message">From GCM: you got message!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">From Demo Server: successfully added device!</string>
+    <string name="server_unregistered">From Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="options_register">Register</string>
+    <string name="options_unregister">Unregister</string>
+    <string name="options_clear">Clear</string>
+    <string name="options_exit">Exit</string>
+    <string name="sincronizando_datos">Sincronizando Datos</string>
+    <string name="match">match</string>
+    <string name="i_want">I Want</string>
+    <string name="preferences">Preferences</string>
+    <string name="near_by_matches">Matches</string>
+    <string name="chat_history">Chat History</string>
+    <string name="location_preferences">Location Preferences</string>
+    <string name="please_enter_amount_in_either">Please enter amount in either box to get equivalent converted value in the other box</string>
+    <string name="search">Search</string>
+    <string name="search_n_by_currency_pair_">Search \n (by currency pair)</string>
+    <string name="_by_currency_pair_">(by currency pair)</string>
+    <string name="matches">Matches</string>
+
+    <!-- Map screen text hints -->
+    <string name="txtMapHint">Hold two second on map to drop pin and set your location.</string>
+    <string name="txtMapAlertMessage">Would you like to remove your custom location and use location based on device GPS?</string>
+    <string name="preferences_updated_successfully">Preferences updated successfully</string>
+    <string name="_location_reg_expression">##@!@##</string>
+    <string name="next">Next</string>
+    <string name="www_gobarter_cash"><u>www.gobartr.net</u></string>
+    <string name="no_nearby_users_found_">No Results Found</string>
+    <string name="please_set_your_preference_">Please set your preference to view near by users</string>
+    <string name="no_records_found">No records found</string>
+    <string name="no_internet_connection_available_please_try_again_">No Internet connection available please try again!</string>
+    <string name="get_the_new_barter_app_it_makes_currency_">Get the new Bartr app, it makes currency exchange easy.\n<u>Bartr - The location based chat application</u>\n www.gobartr.net</string>
+    
+    <string name="pin_send_to">Please enter <b>PIN</b> below sent to</string>
+
+</resources>

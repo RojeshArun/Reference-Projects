@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_bg" >
+
+    <TextView
+        android:id="@+id/txtView_ChatDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/padding_margin_fifteen"
+        android:background="@drawable/date_bg"
+        android:paddingBottom="@dimen/padding_margin_two"
+        android:paddingLeft="@dimen/padding_margin_five"
+        android:paddingRight="@dimen/padding_margin_five"
+        android:paddingTop="@dimen/padding_margin_two"
+        />
+<!--      android:text="@string/sender_chat_date" -->
+
+    <ImageView
+        android:id="@+id/imgView_SenderImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtView_ChatDate"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:layout_marginTop="@dimen/small_padding"
+        android:background="@drawable/com_images_" />
+
+    <TextView
+        android:id="@+id/txtView_chatSenderMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgView_SenderImage"
+        android:layout_toRightOf="@+id/imgView_SenderImage"
+        android:background="@drawable/chat_buble_1"
+        android:paddingLeft="@dimen/padding_margin_fifteen"
+        android:paddingTop="@dimen/padding_margin_five"
+        android:text="hello" />
+
+    <TextView
+        android:id="@+id/txtView_ChatTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txtView_chatSenderMessage" />
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/"/> -->
+
+</RelativeLayout>
